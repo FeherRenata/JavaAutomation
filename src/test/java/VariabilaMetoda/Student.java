@@ -40,14 +40,30 @@ public class Student {
       AreDiploma = true;
 
 
- System.out.print(Nume + '\n');
- System.out.print(Prenume + '\n');
- System.out.print(Varsta + '\n');
- System.out.print(Nume+" "+ Prenume +" "+ Varsta +" "+ Adresa );
- System.out.println(Inaltime);
+ //System.out.print(Nume + '\n');
+ //System.out.print(Prenume + '\n');
+ //System.out.print(Varsta + '\n');
+ //System.out.println(Nume+" "+ Prenume +" "+ Varsta +" "+ Adresa);
+ //System.out.println(Inaltime);
+        System.out.println("Numele studentului este: " + Nume);
+        System.out.println("Prenumele studentului este: " + Prenume);
+        System.out.println("Varsta studentului este: " +  Varsta);
+        System.out.println("Adresa studentului este: " +  Adresa);
+        System.out.println("Inaltimea studentului este: " +  Inaltime);
+        System.out.println("Greutatea studentului este: " +  Greutate);
+        System.out.println("Sexul studentului este: " +  Sex);
+        System.out.println("Are studentul diploma?: " + AreDiploma);
+
+        calculMedie();
+    }
 
 
-
+    public void calculMedie(){
+        Integer nota1 = 8;
+        Integer nota2 = 10;
+        Integer nota3 = 9;
+        Integer medie = (nota1+nota2+nota3)/3;
+        System.out.println("Media studentului este: " + medie);
 
     }
 
