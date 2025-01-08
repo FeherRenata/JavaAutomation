@@ -67,5 +67,10 @@ public class Student {
 
     }
 
+    //metode cu return
+    public Double getSalariu(){
+
+        return;
+    }
 
 }
