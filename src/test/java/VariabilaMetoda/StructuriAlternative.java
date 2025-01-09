@@ -2,7 +2,6 @@ package VariabilaMetoda;
 
 import org.testng.annotations.Test;
 
-import java.sql.SQLOutput;
 
 public class StructuriAlternative {
 
@@ -10,9 +9,9 @@ public class StructuriAlternative {
 
     @Test
     public void methodaTest() {
-//        metodaVerificareNumar(6);
-//        metodaVerificareNumar(2);
-//        metodaVerificareNumar(5);
+        metodaVerificareNumar(6);
+        metodaVerificareNumar(2);
+        metodaVerificareNumar(5);
         metodaVerificareNumarPar(0);
 
 
@@ -20,6 +19,8 @@ public class StructuriAlternative {
         metodaVerificareNumarPar(3);
         metodaVerificareNumarPar(-1);
         metodaVerificareNumarPar(-8);
+
+        zileSaptamana(3);
 
     }
 
@@ -54,6 +55,30 @@ public class StructuriAlternative {
             }
         } else if (valoare == 0) {
             System.out.println("Numarule este " + valoare);
+        }
+    }
+
+    // exemplu switch case
+    public void zileSaptamana(Integer zi) {
+        switch (zi) {
+            case 1:
+                System.out.println("Azi este Luni");
+                break;
+            case 2:
+                System.out.println("Azi este Marti");
+                break;
+            case 3:
+                System.out.println("Azi este Miercuri");
+                break;
+            case 4:
+                System.out.println("Azi este Joi");
+                break;
+            case 5:
+                System.out.println("Azi este Vineri");
+                break;
+            default:
+                System.out.println("Nu mai sunt zile");
+
         }
     }
 
